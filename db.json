@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "username": "sameer",
+      "task": "go to home",
+      "status": "pending",
+      "id": 4
+    },
+    {
+      "username": "sameer",
+      "task": "learn vue",
+      "status": "pending",
+      "id": 5
+    },
+    {
+      "username": "sameer",
+      "task": "buy laptop",
+      "status": "pending",
+      "id": 6
+    },
+    {
+      "username": "sameer",
+      "task": "checkin",
+      "status": "pending",
+      "id": 7
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
