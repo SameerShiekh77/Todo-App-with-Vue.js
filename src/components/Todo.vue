@@ -3,7 +3,6 @@
         <h1>Todo App</h1>
 
         <form @submit="submitData">
-            <input required v-model="tasks.username" type="text" placeholder="User Name"> <br><br>
             <input required v-model="tasks.task" type="text" placeholder="Enter your Task"> <br><br>
             <input required v-model="tasks.status" type="radio" name="status" value="pending"> Pending 
             <input required v-model="tasks.status" type="radio" name="status" value="completed"> Completed <br><br>
@@ -13,14 +12,12 @@
 <div>
     <table border="1px">
         <tr>
-            <th>User Name</th>
             <th>Task</th>
             <th>Status</th>
             <th colspan="2">Actions</th>
         </tr>
 
         <tr v-for="item in list" :key="item.id">
-            <td>{{item.username}}</td>
             <td>{{item.task}}</td>
             <td>{{item.status}}</td>
             <td><button @click="updateData(item.id)">Update</button></td>
@@ -40,7 +37,6 @@ export default{
         return{
             tasks:{
 
-                username: null,
                 task: null,
                 status: null,
             },
@@ -71,7 +67,6 @@ export default{
         updateData(id){
             axios.get('http://localhost:3000/posts/'+id)
             .then(resp=>{
-                this.tasks.username = resp.data.username
                 this.tasks.status= resp.data.status
                 this.tasks.task = resp.data.task
             })

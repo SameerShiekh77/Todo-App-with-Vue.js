@@ -1,28 +1,27 @@
 {
   "posts": [
     {
-      "username": "sameer",
-      "task": "go to home",
-      "status": "pending",
-      "id": 4
-    },
-    {
-      "username": "sameer",
       "task": "learn vue",
       "status": "pending",
-      "id": 5
+      "id": 1
     },
     {
-      "username": "sameer",
-      "task": "buy laptop",
+      "task": "deploy php projects",
       "status": "pending",
-      "id": 6
+      "username": "",
+      "id": 2
     },
     {
-      "username": "sameer",
-      "task": "checkin",
+      "task": "update portfolio",
       "status": "pending",
-      "id": 7
+      "username": "",
+      "id": 3
+    },
+    {
+      "task": "gym",
+      "status": "pending",
+      "username": "",
+      "id": 4
     }
   ],
   "comments": [],
